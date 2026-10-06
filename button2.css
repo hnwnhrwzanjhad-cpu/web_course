@@ -1,0 +1,27 @@
+.search{
+   
+    color: rgb(0, 0, 0);
+    border-color: rgb(243, 46, 193);
+    background-color: pink;
+    border-radius:25px;
+    font-size: 15%;
+    padding: 1px 25px;
+    border-width: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.plus{
+    color: white;
+    background-color: #590ba1;
+    border-radius: 50%;
+    border: none;
+    padding: 7px;
+    font-size: 8px;
+}
+.create{
+    color: white;
+    background-color: rgb(32, 100, 3);
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    width: 150px;
+    border: 2px black;
+    padding: 6px;
+}

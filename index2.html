@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sundus</title>
+  
+    <link rel="stylesheet" href="index2.css"> 
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h1 class="name">Activity</h1>
+            <input class="search" placeholder="Search"></input>
+      
+            <button class="login" onclick="changInnerTxt(this)">Login</button>
+        </nav>
+
+        <div class="container">
+
+            <div class="left-side">
+
+                <div class="ninja-box">
+
+                    <div class="ninja-info">
+                        <h2>Welcome</h2>
+                        <em>noun</em>
+                        <p>Plural: <em>Engineers</em></p>
+                     
+                        <button class="likes" id="btn-likes-13" onclick="handleLike13(this)">13 likes</button>
+                    </div>
+
+                    <div class="ninja-bio">
+                        <p>
+                          A practitioner skilled in the
+                            <a href="">Japanese</a> art of <a href="">ninjutsu</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="ninja-box">
+
+                    <div class="ninja-info">
+                        <h2>Engineer</h2>
+                        <em>noun</em>
+                        <p>Plural: <em>Engineers</em></p>
+                       
+                        <button class="likes" id="btn-likes-37" onclick="handleLike37(this)">37 likes</button>
+                    </div>
+
+                    <div class="ninja-bio">
+                        <p>A programmer who breaks down problems with
+                           <a href="">Zen</a>-like focus
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right-side">
+
+                <div class="right-box">
+                    <h3>
+                        JavaScript is defined by <span>you</span>
+                    </h3>
+
+                    <button class="definition" onclick="remove(this)">Add Definition</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="post-box">
+
+            <div class="post-header">
+                <h3>Some User</h3>
+                <p><span id="likes">3</span> like(s)</p>
+         
+                <button onclick="addLike(this)">Like</button>
+            </div>
+
+            <p class="post-body">
+                This is some filler text, it can say anything we like
+            </p>
+
+        </div>
+
+    </main>
+
+    <script>
+     
+        function changInnerTxt(element) {
+            if (element.innerText === "Login") {
+                element.innerText = "Logout";
+            } else {
+                element.innerText = "Login";
+            }
+        }
+
+      
+        function changeLikesColors(element) {
+            element.style.color = "red";
+            element.style.backgroundColor = "blue";
+        }
+
+ 
+        function handleLike13(element) {
+            
+            changeLikesColors(element);
+           
+            element.style.padding = "20px";
+            
+            console.log("Clicked on 13 likes: Colors and padding changed");
+        }
+
+        function handleLike37(element) {
+            
+            changeLikesColors(element);
+            
+            
+            element.style.borderWidth = "5px"; 
+            element.style.borderStyle = "solid"; 
+            element.style.borderColor = "yellow"; 
+            
+            console.log("Clicked on 37 likes: Colors and border changed");
+        }
+
+        var count = 3;
+        function addLike(element) {
+            var likesCount = document.querySelector("#likes");
+            count++;
+            likesCount.innerText = count;
+            
+        
+            changeLikesColors(element);
+        }
+
+        function remove(element) {
+            element.remove();
+        }
+
+    </script>
+</body>
+
+</html>

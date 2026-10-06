@@ -1,0 +1,42 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(54, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+h3{
+    margin: 0;
+}
+.links{
+    margin: 0px 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: rgba(240, 248, 255, 0.63);
+}
+#profile{
+    color: aliceblue;
+}
+.sign{
+    color: aliceblue;
+    background-color: rgb(13, 131, 131);
+    border-color: 2px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px black;
+}
+#profile{
+    color: rgb(9, 4, 4);
+    font-weight: bold;
+    
+}
